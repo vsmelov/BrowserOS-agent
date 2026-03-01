@@ -1,4 +1,6 @@
-import { ZodError, z } from 'zod'
+// Vite-node in wxt build may expose zod as default; use default ?? namespace so both resolve
+import * as zodNs from 'zod'
+const z = (zodNs as unknown as { default?: typeof zodNs }).default ?? zodNs
 
 const EnvSchema = z.object({
   VITE_BROWSEROS_SERVER_PORT: z.coerce.number().optional(),
@@ -12,7 +14,7 @@ const EnvSchema = z.object({
 try {
   EnvSchema.parse(import.meta.env)
 } catch (error) {
-  if (error instanceof ZodError) {
+  if (error instanceof z.ZodError) {
     let message = 'Missing required values in .env:\n'
     for (const issue of error.issues) {
       message += `${issue.path.join('.')}\n`
