@@ -95,31 +95,10 @@ function rotateLogIfNeeded(logPath: string): void {
 
 /**
  * Create pino transport configuration for console output.
- * Returns null for production or when pino-pretty is not available (e.g. Bun compile bundle).
+ * Always returns null: pino-pretty uses thread-stream which doesn't resolve in Bun compile
+ * bundle and would crash. We use pino.destination() for JSON to stdout everywhere.
  */
 function createConsoleTransport(): pino.TransportSingleOptions | null {
-  // Skip pino-pretty when running as Bun-compiled bundle (pino-pretty won't resolve).
-  // Binary name is browseros-server-<platform> (hyphen); legacy check for browseros_server (underscore).
-  if (
-    typeof process !== 'undefined' &&
-    process.execPath &&
-    (process.execPath.includes('browseros_server') || process.execPath.includes('browseros-server'))
-  ) {
-    return null
-  }
-  if (isDev) {
-    return {
-      target: 'pino-pretty',
-      options: {
-        colorize: true,
-        translateTime: 'SYS:HH:MM:ss.l',
-        ignore: 'pid,hostname',
-      },
-    }
-  }
-
-  // Production: return null to use synchronous stdout logging.
-  // pino.transport() uses thread-stream which doesn't work with Bun compile.
   return null
 }
 
