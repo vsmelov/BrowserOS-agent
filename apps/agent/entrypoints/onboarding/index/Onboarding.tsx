@@ -51,7 +51,7 @@ export const Onboarding: FC = () => {
             >
               Welcome to{' '}
               <span className="inline-block animate-glow-once text-accent-orange">
-                BrowserOS
+                PonyAI
               </span>
             </h1>
 
@@ -126,7 +126,7 @@ export const Onboarding: FC = () => {
       <footer className="border-border/40 border-t py-8">
         <div className="mx-auto max-w-7xl px-6">
           <p className="text-center text-muted-foreground text-sm">
-            BrowserOS © {getCurrentYear()} - The Open-Source Agentic Browser
+            PonyAI © {getCurrentYear()} - The Open-Source Agentic Browser
           </p>
         </div>
       </footer>

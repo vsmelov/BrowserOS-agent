@@ -67,7 +67,7 @@ export const BrowserOSIcon: FC<{ size?: number; className?: string }> = ({
   return (
     <img
       src={ProductLogoSvg}
-      alt="BrowserOS"
+      alt="PonyAI"
       width={size}
       height={size}
       className={className}
