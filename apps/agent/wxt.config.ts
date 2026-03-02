@@ -14,7 +14,7 @@ const apiPattern = apiUrl.port
   : apiUrl.hostname
 
 // See https://wxt.dev/api/config.html
-// Extension ID will be bflpfmnmnokmjhmgnolecpppdbdophmk
+// Extension ID from signing key (fork: ijlpinlejblenhkmjpgbjglcjibmlenp)
 export default defineConfig({
   outDir: 'dist',
   modules: ['@wxt-dev/module-react'],
