@@ -99,7 +99,12 @@ function rotateLogIfNeeded(logPath: string): void {
  */
 function createConsoleTransport(): pino.TransportSingleOptions | null {
   // Skip pino-pretty when running as Bun-compiled bundle (pino-pretty won't resolve).
-  if (typeof process !== 'undefined' && process.execPath?.includes('browseros_server')) {
+  // Binary name is browseros-server-<platform> (hyphen); legacy check for browseros_server (underscore).
+  if (
+    typeof process !== 'undefined' &&
+    process.execPath &&
+    (process.execPath.includes('browseros_server') || process.execPath.includes('browseros-server'))
+  ) {
     return null
   }
   if (isDev) {
