@@ -71,7 +71,7 @@ export default defineConfig({
   },
   vite: () => ({
     build: {
-      sourcemap: 'hidden',
+      sourcemap: false,
     },
     plugins: [
       tailwindcss(),
