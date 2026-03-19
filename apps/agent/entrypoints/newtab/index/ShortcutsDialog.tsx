@@ -28,7 +28,7 @@ export const ShortcutsDialog = ({
             Keyboard Shortcuts
           </DialogTitle>
           <DialogDescription>
-            Use these shortcuts to navigate PonyAI faster
+            Use these shortcuts to navigate PonyClaw faster
           </DialogDescription>
         </DialogHeader>
 

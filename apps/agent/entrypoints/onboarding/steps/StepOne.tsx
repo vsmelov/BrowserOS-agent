@@ -57,12 +57,12 @@ export const StepOne: FC<StepOneProps> = ({ direction }) => {
             <div className="flex h-16 w-16 items-center justify-center rounded-xl shadow-xl">
               <img
                 src={ProductLogoSvg}
-                alt="PonyAI"
+                alt="PonyClaw"
                 className="h-full w-full"
               />
             </div>
             <span className="font-medium text-accent-orange text-xs">
-              PonyAI
+              PonyClaw
             </span>
           </div>
         </div>

@@ -65,7 +65,7 @@ const SuggestionItemRenderer: FC<{
       return (
         <li className={baseClassName} {...getItemProps({ item, index })}>
           <Sparkles className="h-4 w-4 text-muted-foreground" />
-          <span className="font-semibold">Ask PonyAI:</span>
+          <span className="font-semibold">Ask PonyClaw:</span>
           {item.message || 'Type a message...'}
         </li>
       )

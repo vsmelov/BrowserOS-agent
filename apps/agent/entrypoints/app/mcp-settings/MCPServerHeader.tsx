@@ -17,8 +17,8 @@ export const MCPServerHeader: FC<MCPServerHeaderProps> = ({
   serverUrl,
   isLoading,
   error,
-  title = 'PonyAI MCP Server',
-  description = 'Connect PonyAI to MCP clients like claude code, gemini and others.',
+  title = 'PonyClaw MCP Server',
+  description = 'Connect PonyClaw to MCP clients like claude code, gemini and others.',
   remoteAccessEnabled = false,
 }) => {
   const [isCopied, setIsCopied] = useState(false)

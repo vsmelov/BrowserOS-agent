@@ -23,9 +23,9 @@ type NavItem = {
 }
 
 const settingsNavItems: NavItem[] = [
-  { name: 'PonyAI AI', to: '/settings/ai', icon: Bot },
+  { name: 'PonyClaw AI', to: '/settings/ai', icon: Bot },
   { name: 'LLM Chat & Hub', to: '/settings/chat', icon: MessageSquare },
-  { name: 'PonyAI as MCP', to: '/settings/mcp', icon: Server },
+  { name: 'PonyClaw as MCP', to: '/settings/mcp', icon: Server },
   {
     name: 'Customization',
     to: '/settings/customization',
@@ -95,7 +95,7 @@ export const SettingsSidebar: FC = () => {
           className="flex h-9 items-center gap-2 overflow-hidden whitespace-nowrap rounded-md px-3 font-medium text-sm transition-colors hover:bg-sidebar-accent hover:text-sidebar-accent-foreground"
         >
           <Info className="size-4 shrink-0" />
-          <span className="truncate">About PonyAI</span>
+          <span className="truncate">About PonyClaw</span>
         </a>
       </div>
     </div>

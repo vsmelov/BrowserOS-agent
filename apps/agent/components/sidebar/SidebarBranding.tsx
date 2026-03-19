@@ -68,7 +68,7 @@ export const SidebarBranding: FC<SidebarBrandingProps> = ({
       </div>
     )
   ) : (
-    <img src={ProductLogo} alt="PonyAI" className="size-8" />
+    <img src={ProductLogo} alt="PonyClaw" className="size-8" />
   )
 
   return (
@@ -93,7 +93,7 @@ export const SidebarBranding: FC<SidebarBrandingProps> = ({
                 <span className="truncate font-semibold">
                   {isLoggedIn
                     ? displayName
-                    : selectedFolder?.name || 'PonyAI'}
+                    : selectedFolder?.name || 'PonyClaw'}
                 </span>
                 <ChevronDown className="size-3.5 shrink-0 text-muted-foreground" />
               </div>

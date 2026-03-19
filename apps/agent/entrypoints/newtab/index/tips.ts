@@ -41,7 +41,7 @@ export const TIPS: Tip[] = [
   },
   {
     id: 'claude-code-mcp',
-    text: 'Connect PonyAI to Claude Code with the MCP integration for full browser control from your terminal.',
+    text: 'Connect PonyClaw to Claude Code with the MCP integration for full browser control from your terminal.',
   },
   {
     id: 'mcp-servers',
@@ -53,7 +53,7 @@ export const TIPS: Tip[] = [
   },
   {
     id: 'ad-blocking',
-    text: 'PonyAI supports uBlock Origin for ad blocking — install it from the Chrome Web Store or GitHub.',
+    text: 'PonyClaw supports uBlock Origin for ad blocking — install it from the Chrome Web Store or GitHub.',
   },
   {
     id: 'at-mention-tabs',

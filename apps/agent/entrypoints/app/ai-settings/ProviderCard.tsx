@@ -80,7 +80,7 @@ export const ProviderCard: FC<ProviderCardProps> = ({
         <p className="truncate text-muted-foreground text-sm">
           {isBuiltIn ? (
             <>
-              PonyAI-hosted model with strict rate limits.{' '}
+              PonyClaw-hosted model with strict rate limits.{' '}
               <a
                 href="https://docs.browseros.com/features/bring-your-own-llm"
                 target="_blank"
